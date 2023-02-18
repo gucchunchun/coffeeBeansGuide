@@ -10,228 +10,210 @@
 
 <body>
     <header>
-        <section class="headBar">
+        <nav id="nav">
             <div class="title">COFFEE BEAN</div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Merchandise</a></li>
-                    <li><a href="#">On Sale</a></li>
-                    <li><a href="#">Discount</a></li>
-                    <li><a href="#">Reservation</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="banner">
-            <div class="bannerTitle">
-                <h1>                
-                    <span>UNIQUELY</span>
-                    <span>FRESH</span>
-                    <span>TASTE</span>
-                </h1>
-            </div>
-            <div>
+            <ul>
+                <li><a href="#nav">Home</a></li>
+                <li><a href="#">Merchandise</a></li>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">Discount</a></li>
+                <li><a href="#">Reservation</a></li>
+            </ul>
+        </nav>
+        <section class="banner" id="banner">
+            <!-- put img as a backgrounf in CSS -->
+            <div class="bannerText">
+                <!-- don't choise <hn>tag with the size of character -->
+                <h2>UNIQUELY</span>FRESH</span>TASTE</h2>
                 <p>Try our tasty coffee bean, produced with unique taste.</p>
+                <p class="learnMore">
+                    <a href="#">Learn More</a>
+                </p>
             </div>
-            <p class="learnMore">
-                <a>Learn More</a>
-            </p>
-            <img src="./pics/banner-bg.jpg">
         </section>
-        <section class="subBannerSection">
-            <section class="subBanner">
-                <div class="subbannerTitle">
-                    <h2>
-                        <span>SEASONAL</span>
-                        <span>COFFEE</span>
-                        <span>FLAVOURS</span>
-                    </h2>
+        <section class="ads" id="ads">
+            <div class="adsItems adsItem1">
+                <div class="adstext">
+                    <h3>SEASONAL<span>COFFEE</span>FLAVOURS</h3>
+                    <p class="readMore"><a href="#">Read More</a></p>
                 </div>
-                <p class="readMore"><a>Read More</a></p>
-                <img src="./pics/ads-img1.jpg">
-            </section>
-            <section class="subBanner">
-                <div class="subbannerTitle">
-                    <h2>
-                        <span>SEASONAL</span>
-                        <span>BUNDLE</span>
-                        <span>PACKAGES¨</span>
-                    </h2>
+            </div>
+            <div class="adsItems adsItem2">
+                <div class="adstext">
+                    <h3>SEASONAL<span>BUNDLE</span>PACKAGES</h3>
+                    <p class="readMore"><a href="#">Read More</a></p>
                 </div>
-                <p class="readMore"><a>Read More</a></p>
-                <img src="./pics/ads-img2.jpg">
-            </section>
-            
+            </div>
         </section>
     </header>
 
     <main>
-        <section class="merchandise">
-            <p class="prefixH3"><i>What happens here</i></p>
-            <h3>COFFEE HOUSE MERCHANDISE</h3>
-            <div>
-                <div class="merchandise">
-                    <img src="./pics/merch-img1.jpg">
-                    <p class="merchadiceName">Arabica - Extra Course</p>
+        <section class="merchandise" id="merchandise">
+            <div class="mainSectionTitle">
+                <p class="prefixH"><i>What happens here</i></p>
+                <h2>COFFEE HOUSE MERCHANDISE</h2>
+                <hr>                
+            </div>
+            <div class="merchandiseGallery">
+                <div class="merchandiseItems">
+                    <img src="./pics/merch-img1.jpg" alt="">
+                    <h3 class="merchadiceName">Arabica - Extra Course</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$70.00</p>
                 </div>
-                <div class="merchandise">
-                    <img src="./pics/merch-img2.jpg">
-                    <p class="merchadiceName">Arabica - Fine Grind</p>
+                <div class="merchandiseItems">
+                    <img src="./pics/merch-img2.jpg" alt="">
+                    <h3 class="merchadiceName">Arabica - Fine Grind</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$70.00</p>
                 </div>
-                <div class="merchandise">
-                    <img src="./pics/merch-img3.jpg">
-                    <p class="merchadiceName">French Vanilla</p>
+                <div class="merchandiseItems">
+                    <img src="./pics/merch-img3.jpg" alt="">
+                    <h3 class="merchadiceName">French Vanilla</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$80.00</p>
                 </div>
-                <div class="merchandise">
-                    <img src="./pics/merch-img4.jpg">
-                    <p class="merchadiceName">Deluxe Chocolate</p>
+                <div class="merchandiseItems">
+                    <img src="./pics/merch-img4.jpg" alt="">
+                    <h3 class="merchadiceName">Deluxe Chocolate</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$100.00</p>
                 </div>
-                <div class="merchandise">
-                    <img src="./pics/merch-img5.jpg">
-                    <p class="merchadiceName">Original Beans</p>
+                <div class="merchandiseItems">
+                    <img src="./pics/merch-img5.jpg" alt="">
+                    <h3 class="merchadiceName">Original Beans</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$100.00</p>
                 </div>
-                <div class="merchandise">
-                    <img src="./pics/merch-img6.jpg">
-                    <p class="merchadiceName">Paper Pouch</p>
+                <div class="merchandiseItems">
+                    <img src="./pics/merch-img6.jpg" alt="">
+                    <h3 class="merchadiceName">Paper Pouch</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$71.00</p>
                 </div>
-                <div class="merchandise">
-                    <img src="./pics/merch-img7.jpg">
-                    <p class="merchadiceName">Freshly Picked</p>
+                <div class="merchandiseItems">
+                    <img src="./pics/merch-img7.jpg" alt="">
+                    <h3 class="merchadiceName">Freshly Picked</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$71.00</p>
                 </div>
-                <div class="merchandise">
-                    <img src="./pics/merch-img8.jpg">
-                    <p class="merchadiceName">Mug</p>
+                <div class="merchandiseItems">
+                    <img src="./pics/merch-img8.jpg" alt="">
+                    <h3 class="merchadiceName">Mug</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$25.00</p>
                 </div>
             </div>
-            <div class="advertisement">
-                <img src="./pics/ads-img3.jpg" alt="">
-                <p class="prefixH3"><i>We brew them fresh daily</i></p>
+        </section>
+
+        <section class="discount" id="discount">
+            <div class="discountText">
+                <p class="prefixH"><i>We brew them fresh daily</i></p>
                 <h2>MEMBER'S DISCOUNTS UP TO 40%</h2>
-                <p><a>View Products</a></p>
+                <p><a>View Products</a></p>                    
             </div>
         </section>
 
-        <section class="merchandise sale">
-            <p class="prefixH3"><i>What happens here</i></p>
-            <h3>MERCHANDISE SALE</h3>
-            <div>
-                <div class="merchandise">
+        <section class="merchandise sale" id="merhandiseSale">
+            <div class="mainSectionTitle">
+                <p class="prefixH"><i>What happens here</i></p>
+                <h2>MERCHANDISE SALE</h2>
+                <hr>                
+            </div>
+            <div class="merchandiseGallery">
+                <div class="merchandiseItems">
                     <img src="./pics/merch-img9.jpg">
-                    <p class="merchadiceName">Arabica - Extra Course</p>
+                    <h3 class="merchadiceName">Arabica - Extra Course</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$70.00</p>
                 </div>
-                <div class="merchandise">
+                <div class="merchandiseItems">
                     <img src="./pics/merch-img10.jpg">
-                    <p class="merchadiceName">Arabica - Fine Grind</p>
+                    <h3 class="merchadiceName">Arabica - Fine Grind</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$70.00</p>
                 </div>
-                <div class="merchandise">
+                <div class="merchandiseItems">
                     <img src="./pics/merch-img11.jpg">
-                    <p class="merchadiceName">French Vanilla</p>
+                    <h3 class="merchadiceName">French Vanilla</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$80.00</p>
                 </div>
-                <div class="merchandise">
+                <div class="merchandiseItems">
                     <img src="./pics/merch-img12.jpg">
-                    <p class="merchadiceName">Deluxe Chocolate</p>
+                    <h3 class="merchadiceName">Deluxe Chocolate</h3>
                     <p class="merchadiceDescription">*****</p>
                     <p class="merchadicePrice">$100.00</p>
                 </div>
+            <div>
         </section>
 
-        <section class="links">
-            <div class="link">
-                <img src="" alt="">
-                <h2>
-                    <span>COFFEE</span>
-                    <span>BEAN</span>
-                    <span>VARIETIES</span>
-                </h2>
-                <p class="readMore"><a>READ MORE</a></p>
+        <section class="ads" id="ads">
+            <div class="adsItems adsItem3">
+                <div class="adstext">
+                    <h3>Coffee Bean Varieties</h3>
+                    <p class="readMore"><a href="#">Read More</a></p>
+                </div>
             </div>
-            <div class="link">
-                <img src="" alt="">
-                <h2>
-                    <span>OUR</span>
-                    <span>BARISTA'S</span>
-                    <span>FAVORITE</span>
-                </h2>
-                <p class="readMore"><a>READ MORE</a></p>
+            <div class="adsItems adsItem4">
+                <div class="adstext">
+                    <h3>Our Barista's Favorite</h3>
+                    <p class="readMore"><a href="#">Read More</a></p>
+                </div>
             </div>
-            <div class="link">
-                <img src="" alt="">
-                <h2>
-                    <span>THE</span>
-                    <span>COFFEE</span>
-                    <span>SELLERS</span>
-                </h2>
-                <p class="readMore"><a>READ MORE</a></p>
+            <div class="adsItems adsItem5">
+                <div class="adstext">
+                    <h3>The Coffee - Best Sellers</h3>
+                    <p class="readMore"><a href="#">Read More</a></p>
+                </div>
             </div>
-            <div class="link">
-                <img src="" alt="">
-                <h2>
-                    <span>MORE</span>
-                    <span>THAN</span>
-                    <span>JUST THE</span>
-                    <span>COFFEE</span>
-                </h2>
-                <p class="readMore"><a>READ MORE</a></p>
+            <div class="adsItems adsItem6">
+                <div class="adstext">
+                    <h3>>More than just the coffee</h3>
+                    <p class="readMore"><a href="#">Read More</a></p>
+                </div>
             </div>
         </section>
 
         <section class="reservaitonForm">
-            <h3>RESERVATION FORM</h3>
+            <div class="mainSectionTitle">
+                <h2>RESERVATION FORM</h2>
+                <hr>
+            </div>
             <form>
-                <section>
-                    <fieldset class="inputCustomerDetail">
-                        <div>
+                <section action="#" method="#">
+                    <fieldset class="inputCustomerDetails">
+                        <div class="inputDiv">
                             <label for="nameInput">Full Name</label>
                             <input id="nameInput" type="text" name="name" placeholder="Last Name, First Name" required>
                         </div>
-                        <div>
+                        <div class="inputDiv">
                             <label for="emailInput">Email Address</label>
                             <input id="emailInput" type="text" name="email" placeholder="mail@mail.com" required>                            
                         </div>
-                        <div>
+                        <div class="inputDiv">
                             <label for="phoneNumInput">Phone Number</label>
                             <input id="phoneNumInput" type="text" name="phoneNumber" placeholder="Last Name, First Name">
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="ReservationDetails">
                         <p>Reservation Details</p>
-                        <div>
+                        <div class="inputDiv">
                             <label for="guestNumChoice">Number of Guest</label>
                             <input id="guestNumChoice" list="guestNums" name="guestNumber">
                             <datalist id="guestNums">
-                                <option value="1">
-                                <option value="2">
-                                <option value="3">
-                                <option value="more than 4">
+                                <!-- option value is the info which is send to host -->
+                                <option value="1person">
+                                <option value="2persons">
+                                <option value="3persons">
+                                <option value="more than 4persons">
                             </datalist>                            
                         </div>
-                        <div>
+                        <div class="inputDiv">
                             <label>Reservation Date</label>
-                            <input type="date" id="date" name="reservationDate" mim="2023-02-17">
+                            <input type="date" id="date" name="reservationDate" mim="2023-02-17" required>
                         </div>
-                        <div>
+                        <div class="inputDiv">
                             <label>Reservation Time</label>
                             <input type="radio" id="Morning" name="reservationTime" value="Morning"><label for="Morning">Morning</label>
                             <input type="radio" id="Afternoon" name="reservationTime" value="Afternoon"><label for="Morning">Afternoon</label>
@@ -242,26 +224,28 @@
                 <section>
                     <fieldset>
                         <label for="additiionalRequest">Additional Request</label>
-                        <input type="textarea" id="text" name="additiionalRequest">
+                        <textarea id="request" name="additiionalRequest" cols="30" rows="10"></textarea>
                     </fieldset>
                     <fieldset>
                         <p>PAYMENT</p>
                         <p>Payment Accepted Cards</p>
                         <img src="./pics/reservation-cards.png" alt="">
-                        <div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="inputDiv">
                             <label for="creditName">Full Name</label>
                             <input id="creditName" type="text" name="creditcardName" placeholder="Yuna Taniguchi" required>
                         </div>
-                        <div>
+                        <div class="inputDiv">
                             <label for="creditNum">Email Address</label>
                             <input id="creditNum" type="text" name="creditNumber" placeholder="1234567890">                            
                         </div>
                     </fieldset>
                     <fieldset>
-                        <label for="confirm">I agree in the <a href="">terms and conditions</a>.</label>
+                        <label for="confirm">I agree in the <a href="#">terms and conditions</a>.</label>
                         <input type="checkbox" id="confirm" name="confirmation">
+                        <input type="submit" value="SEND">
                     </fieldset>
-                    <input type="submit" value="SEND">
                 </section>
             </form>
         </section>
@@ -269,9 +253,9 @@
 
     <footer>
         <section>
-            <ul class="footerInfo">
-                <li class="openTime">
-                    <h4>OPENING HOURS</h4>
+            <ul class="footerWidgets">
+                <li class="footerWidget openTime">
+                    <h3>OPENING HOURS</h3>
                     <table>
                         <thread>
                             <th>Day</th>
@@ -316,8 +300,8 @@
                     </table>
                 </li>
 
-                <li class="latestPostLink">
-                    <h4>LATEST POST</h4>
+                <li class="footerWidget latestPostLink">
+                    <h3>LATEST POST</h3>
                     <ul>
                         <li>
                             <a>
@@ -346,10 +330,10 @@
                     </ul>
                 </li>
 
-                <li class="contactAserchPost">
+                <li class="footerWidget contactAserchPost">
                     <ul>
                         <li class="contact">
-                            <h4>CONTACT US</h4>
+                            <h3>CONTACT US</h3>
                             <ul>
                                 <li>info@coffeebean.com</li>
                                 <li>1-444-123-4559</li>
@@ -358,23 +342,23 @@
                         </li>
 
                         <li class="serchPost">
-                            <h4>THE LAST<br> 
-                                STANDARD POST</h4>
-                            <div>
+                            <h3>THE LAST<br> 
+                                STANDARD POST</h3>
+                            <form action="#" method="#" class="serchPostForm">
                                 <input type="search" id="search">
-                                <button type="submit">SERCH</button>
-                            </div>
+                                <button type="submit" id="searchButton">SERCH</button>
+                            </form>
                         </li>
                     </ul>
                 </li>
 
-                <li class="otherLocation">
-                    <h4>OTHER LOCATION</h4>
-                    <div>
+                <li class="footerWidget otherLocations">
+                    <h3>OTHER LOCATION</h3>
+                    <div class="otherLocation">
                         <p class="shopName">Coffee Bean Philippines</p>
                         <p class="shopLocation">1234 IT Park Cebu City</p>
                     </div>
-                    <div>
+                    <div class="otherLocation">
                         <p class="shopName">Coffee Bean Tokyo</p>
                         <p class="shopLocation">1234 Business Park Tokyo Japan</p>
                     </div>
@@ -383,16 +367,19 @@
         </section>
 
         <section>
-            <p>COFFEE BEAN</p>
-            <div>
+            <div class="socialWidget">
+                <p>COFFEE BEAN</p>
+            </div>
+            <div class="socialWidget">
                 <a href="" ><img src="./pics/icon-fb.png" alt="facebookLink"></a>
                 <a href="" ><img src="./pics/icon-ig.png" alt="instagramLink"></a>
                 <a href="" ><img src="./pics/icon-tw.png" alt="twitterLink"></a>
             </div>
-            <p>© 2021 | Kredo IT Abroad</p>
+            <div  class="socialWidget">
+                <p>© 2021 | Kredo IT Abroad</p>
+            </div>
         </section>
     </footer>
-
 </body>
 
 </html>
