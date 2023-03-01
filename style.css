@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* imported nomal size&bold700size */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* global things */
+
+/* header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(89, 70, 57);
+    margin-left: 50px;
+}
+header nav ul{
+    display: flex;
+    margin-right: 50px;
+}
+header nav ul li {
+    margin-right: 1rem;
+}
+
+.banner {
+    /* How to make background fit to widnows */
+    background: url("./pics/banner-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 670px;
+    object-fit: cover;
+}
+
+/* text on pic global */
+.picsText {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 50px;
+    width: 50%;
+}
+
+.bannerText h2{
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(89, 70, 57);
+}
+.bannerText h2 span{
+    color: rgb(222, 196, 124);
+}
+.bannerText p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* moreInfo global */
+.moreInfoButton {
+    width: 100px;
+    padding:10px 20px;
+    background-color: rgb(89, 70, 57,0.5);
+    text-align: center;
+}
+
+/* each background pics */
+.adsItem1 {
+    background: url(pics/ads-img1.jpg);
+}
+.adsItem2 {
+    background: url(pics/ads-img2.jpg);
+}
+.adsItem3 {
+    background: url(pics/ads-img3.jpg);
+}
+.adsItem4 {
+    background: url(pics/ads-img4.jpg);
+}
+.adsItem5 {
+    background: url(pics/ads-img5.jpg);
+}
+.adsItem6 {
+    background: url(pics/ads-img6.jpg);
+}
+
+/* ads gloal style */
+.ads {
+    width: 90%;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.adsItems {
+    width: 48%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.adstext {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 50px;
+    width: 50%;
+    overflow-wrap: break-word;
+    color:white;
+}
+.adstext h3 {
+    font-size: 2rem;
+}
+.readMore {
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+/* mainSectionTitle global */
+.mainSectionTitle {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainSectionTitle * {
+    text-align: center;
+    /*  for inline elements (ex. <i>) */
+}
+.mainSectionTitle hr{
+    width: 25%;
+    margin:0 auto;
+    /* for block element itself */
+}
+
+/* merchandise global */
+.merchandise {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.merchandiseGallery {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.merchandiseItems {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.merchandiseItems img {
+    width:100%;
+}
+.merchandiseItems .merchadiceName {
+    font-weight: bold;
+    flex: 1 0 auto;
+    /* make streach this element's height to fill the remain space */
+}
+
+.discount {
+    margin: 5em auto;
+    background: url("pics/discount-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    width: 90%;
+    height: 670px;
+    object-fit: cover;
+}
+.discountText {
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+}
+.discountText .moreInfoButton{
+    margin: 0 auto;
+    width: fit-content;
+    background-color: rgba(255,255,255,0.5);
+}
+
+main .ads {
+    margin-top: 60px;
+    height: 1000px;
+}
+main .adsItems {
+    margin-bottom: 4em;
+}
+
+.sale {
+    flex-wrap: nowrap;
+}
+
+.reservaitonForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reservaitonForm form {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* form is block, so it should fit the inside elements height */
+}
+.reservaitonForm section {
+    width: 40%;
+    height: auto;
+    background-color: rgb(243, 245, 245);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.reservaitonForm section * {
+    width:100%;
+}
+fieldset {
+    border: none;
+}
+.inputDiv {
+    height: 4rem;
+}
+.reservaitonForm label {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+}
+.reservaitonForm input{
+    height: 2rem;
+}
+.formTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.reserveTime {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.reserveTime input {
+    width: 20px;
+}
+.reserveTime label {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.payment img {
+    width: 50%;
+}
+.payment, .payment p {
+    text-align: center;
+}
+
+/* footer */
+footer {
+    margin-top: 100px;
+}
+.footerWidgetsBackImg {
+    width: 100%;
+    height: auto;
+    background: url("pics/footer-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footerWidgets {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.footerWidget {
+    width: 180px;
+    margin: 30px 10px;
+    color: aliceblue;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.footerWidget h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+th, td{
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+ul.contactAserchPost {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact {
+    margin-top: 0;
+}
+.serchPost {
+    margin-top: 10px;
+}
+
+.socialWidgets {
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    background-color: rgb(40, 38, 38);
+    display: flex;
+    justify-content: center;
+}
+.socialWidget {
+    margin: 0 30px;
+    height: 100%;
+    width: 10rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.socialWidget p {
+    font-size: 0.6rem;
+    color: aliceblue;
+    text-align: center;
+}
+.socialWidget a, .socialWidget p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.socialWidget img {
+    height: 70%;
+    margin: 0 3px;
+}
