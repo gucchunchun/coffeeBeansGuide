@@ -4,46 +4,107 @@
 :root {
     --c--bg: 255, 255, 255;
     --c--main: 89, 70, 57;
+    --c--secondary: 222, 196, 124;
+    --c--text--white: 255, 255, 255;
+    --c--text--black: 0, 0, 0;
+    --font-size--h1: 5.653rem;
+    --font-size--h2: 3.998rem;
+    --font-size--h3: 2.827rem;
+    --font-size--h4: 1.999rem;
+    --font-size--h5: 1.414rem;
+    --font-size--p: 1rem;
 }
 
 /* Reset */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body {
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-}
-ul {
-    padding-left: 0;
+ul, ol {
     list-style-type: none;
 }
 a {
     text-decoration: none;
     color: inherit;
 }
+button {
+    border: none;
+}
     /* scale 1.414 */
 h1 {
-    font-size: 5.653rem;
+    font-size: var(--font-size--h1);
 }
 h2 {
-    font-size: 3.998rem;
+    font-size: var(--font-size--h2);
 }
 h3 {
-    font-size: 2.827rem;
+    font-size: var(--font-size--h3);
 }
 h4 {
-    font-size: 1.999rem;
+    font-size: var(--font-size--h4);
 }
 h5 {
-    font-size: 1.414rem;
+    font-size: var(--font-size--h5);
 }
 
 
 /* global things */
-
+body {
+    width: 100vw;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size--p);
+}
+    /* hamburger => TODO: wave var.*/
+.hamburger{
+    position: relative;
+    width: var(--font-size--h3);
+    height: var(--font-size--h3);
+    background-color: transparent;
+}
+.hamburger__line, .hamburger__line::before, .hamburger__line::after {
+    position: absolute;
+    width: var(--font-size--h3);
+    aspect-ratio: 10/1;
+    border-radius: 5px;
+    background-color: rgb(var(--c--text--white));
+}
+.hamburger__line::before, .hamburger__line::after {
+    content: "";
+    translate: -50% 0;
+    left: 50%;
+}
+.hamburger__line::before {
+    top: calc(var(--font-size--h2) / 10  * -2.5)
+}
+.hamburger__line::after {
+    top: calc(var(--font-size--h2) / 10  * 2.5)
+}
+.hamburger:hover .hamburger__line,
+.hamburger:hover .hamburger__line::before,
+.hamburger:hover .hamburger__line::after {
+    box-shadow: 1px 1px 4px rgba(var(--c--text--white), 0.5);
+}
+.hamburger:active .hamburger__line {
+    transition: all 0.4s;
+    background-color: transparent;
+}
+.hamburger:active .hamburger__line::before,
+.hamburger:active .hamburger__line::after {
+    transition: all 0.4s;
+    top: 0;
+    translate: -50% -50%;
+}
+.hamburger:active .hamburger__line::before {
+    rotate: 45deg;
+}
+.hamburger:active .hamburger__line::after {
+    rotate: -45deg;
+}
 
 /* header */
 header {
@@ -53,29 +114,63 @@ header {
     align-items: center;
 }
 header nav {
-    width: 100%;
-    background-color: white;
+    position: fixed;
+    width: calc(100% - 2rem);
+    height: 6rem;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    display: grid;
-    grid-template-columns: 50vw 50vw;
 }
-.site-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: rgb(89, 70, 57);
-    margin: 1.5rem;
-    margin-right:auto;
+.header__site-title {
+    width: fit-content;
+    height: var(--font-size--h2);
+    display: block;
+    font-size: var(--font-size--h2);
+    color: rgb(var(--c--text--white));
+    text-align: start;
+    line-height: var(--font-size--h2);
+    white-space: nowrap;
 }
-header nav ul{
+.header__nav__container {
+    width: 50%;
+    height: 100%;
+}
+header nav .hamburger {
+    display: none;
+}
+.header__nav__menu-list{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
-    margin: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(var(--c--text--white));
 }
-header nav ul li {
+.header__nav__menu {
     margin-right: 1rem;
+    white-space: nowrap;
 }
-
+@media screen and (max-width: 62rem){
+    .header__nav__container {
+        position: fixed;
+        top: 0;
+        left: 100vw;
+    }
+    header nav .hamburger{
+        display: block;
+    }
+}
+@media screen and (max-width: 36rem){
+    :root {
+        --font-size--h1: 3.052rem;
+        --font-size--h2: 2.441rem;
+        --font-size--h3: 1.953rem;
+        --font-size--h4: 1.563rem;
+        --font-size--h5: 1.25rem;
+    }
+}
 .banner {
     /* How to make background fit to widnows */
     background: url("./img/bg/banner.jpg");
@@ -409,15 +504,6 @@ ul.contactAserchPost {
 }
 
 @media only screen and (max-width:800px) {
-    header nav{
-        flex-direction: column;
-    }
-    .title {
-        margin-bottom: 0;
-    }
-    header nav ul{
-        display: none;
-    }
     .ads {
         flex-direction: column;
         align-items: center;
