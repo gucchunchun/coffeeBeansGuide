@@ -4,9 +4,9 @@
 :root {
     --c--bg: 255, 255, 255;
     --c--main: 89, 70, 57;
-
-
 }
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +14,7 @@
 body {
     width: 100%;
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 ul {
     padding-left: 0;
@@ -23,8 +24,26 @@ a {
     text-decoration: none;
     color: inherit;
 }
+    /* scale 1.414 */
+h1 {
+    font-size: 5.653rem;
+}
+h2 {
+    font-size: 3.998rem;
+}
+h3 {
+    font-size: 2.827rem;
+}
+h4 {
+    font-size: 1.999rem;
+}
+h5 {
+    font-size: 1.414rem;
+}
+
 
 /* global things */
+
 
 /* header */
 header {
@@ -42,7 +61,7 @@ header nav {
     display: grid;
     grid-template-columns: 50vw 50vw;
 }
-.title {
+.site-title {
     font-size: 3rem;
     font-weight: bold;
     color: rgb(89, 70, 57);
