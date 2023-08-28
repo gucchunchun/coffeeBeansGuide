@@ -59,7 +59,7 @@ header nav ul li {
 
 .banner {
     /* How to make background fit to widnows */
-    background: url("./img/banner-bg.jpg");
+    background: url("./img/bg/banner.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,22 +104,22 @@ header nav ul li {
 
 /* each background pics */
 .adsItem1 {
-    background: url(img/ads-img1.jpg);
+    background: url(img/ad/ads-img1.jpg);
 }
 .adsItem2 {
-    background: url(img/ads-img2.jpg);
+    background: url(img/ad/ads-img2.jpg);
 }
 .adsItem3 {
-    background: url(img/ads-img3.jpg);
+    background: url(img/ad/ads-img3.jpg);
 }
 .adsItem4 {
-    background: url(img/ads-img4.jpg);
+    background: url(img/ad/ads-img4.jpg);
 }
 .adsItem5 {
-    background: url(img/ads-img5.jpg);
+    background: url(img/ad/ads-img5.jpg);
 }
 .adsItem6 {
-    background: url(img/ads-img6.jpg);
+    background: url(img/ad/ads-img6.jpg);
 }
 
 /* ads gloal style */
@@ -213,7 +213,7 @@ main {
 
 .discount {
     margin: 5em auto;
-    background: url("img/discount-img.jpg");
+    background: url("img/bg/discount.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: none;
@@ -322,7 +322,7 @@ footer {
 }
 .footerWidgetsBackImg {
     width: 100%;
-    background: url("img/footer-img.jpg");
+    background: url("img/bg/footer.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
