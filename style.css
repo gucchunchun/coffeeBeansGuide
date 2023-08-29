@@ -112,7 +112,7 @@ body {
     width: var(--font-size--h3);
     aspect-ratio: 10/1;
     border-radius: 5px;
-    background-color: rgb(var(--c--text--white));
+    background-color: rgb(var(--c--main));
 }
 .hamburger__line {
     transform: translate(-50%, -50%);
@@ -137,7 +137,7 @@ body {
 .hamburger:hover .hamburger__line,
 .hamburger:hover .hamburger__line::before,
 .hamburger:hover .hamburger__line::after {
-    box-shadow: 1px 1px 4px rgba(var(--c--text--white), 0.5);
+    box-shadow: 0.5px 0.5px rgba(var(--c--text--white), 0.5);
 }
 
 .hamburger.close .hamburger__line {
@@ -320,7 +320,9 @@ header nav .hamburger {
 }
 .img__header--banner {
     font-size: var(--font-size--h2);
-    color: rgb(var(--c--main));
+}
+.img__header--banner span {
+    color: rgb(var(--c--secondary));
 }
 /* text on pic global */
 /* .img__text {
