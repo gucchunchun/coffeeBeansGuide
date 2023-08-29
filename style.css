@@ -382,6 +382,7 @@ main {
 .section-title--prefix {
     font-size: var(--font-size--p);
     color: rgb(var(--c--text--black));
+    font-style: italic;
 }
 .section-title--header {
     font-size: var(--font-size--h3);
