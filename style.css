@@ -114,6 +114,11 @@ body {
     border-radius: 5px;
     background-color: rgb(var(--c--text--white));
 }
+.hamburger__line {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
 .hamburger__line::before, .hamburger__line::after {
     content: "";
     left: 50%;
@@ -151,7 +156,32 @@ body {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-
+.img__back-ground {
+    padding: 0 40% 0 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.img__header {
+    font-size: var(--font-size--h3);
+    font-weight: 700;
+    color: rgb(var(--c--text--white));
+}
+.img__text {
+    font-size: var(--font-size--h5);
+    color: rgb(var(--c--text--white));
+}
+.img__link {
+    font-size: var(--font-size--p);
+    color: rgb(var(--c--text--white));
+    text-decoration: underline;
+}
 /* header */
 header {
     width: 100%;
@@ -159,6 +189,7 @@ header {
     flex-direction: column;
     align-items: center;
 }
+    /* nav */
 header nav {
     position: fixed;
     width: calc(100% - 2rem);
@@ -173,7 +204,7 @@ header nav {
     height: var(--font-size--h2);
     display: block;
     font-size: var(--font-size--h2);
-    color: rgb(var(--c--text--white));
+    color: rgb(var(--c--main));
     text-align: start;
     line-height: var(--font-size--h2);
     white-space: nowrap;
@@ -281,30 +312,24 @@ header nav .hamburger {
     }
 
 }
-.banner {
-
-    /* How to make background fit to widnow */
-    background: url("./img/bg/banner.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* banner */
+.img__back-ground--banner {
     width:100%;
-    height: 670px;
-    object-fit: cover;
+    height: 85vh;
+    background-image: url("./img/bg/banner.jpg");
 }
-
-.hamburger-menu {
-    grid-column: 2;
+.img__header--banner {
+    font-size: var(--font-size--h2);
+    color: rgb(var(--c--main));
 }
-
 /* text on pic global */
-.picsText {
+/* .img__text {
     position: relative;
     transform: translateY(-50%);
     top: 50%;
     left: 50px;
     width: 50%;
-}
+} */
 
 .bannerText h2{
     font-size: 5rem;
