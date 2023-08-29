@@ -570,34 +570,46 @@ main {
 
 /* footer */
 footer {
+    width: 100%;
     margin-top: var(--marginT--section);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .img__back-ground--footer {
+    width: 100%;
+    padding: 0 var(--marginSide--section);
     background-image: url("img/bg/footer.jpg");
 }
-.footerWidgets {
-    margin: 0 auto;
+.footer__widget__container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
+    align-items: stretch;
+    justify-content: space-between;
 }
-.footerWidget {
-    flex: 1 0 180px;
-    margin: 30px 10px;
-    color: aliceblue;
-    font-size: 0.7rem;
-    font-weight: 400;
+.footer__widget {
+    width: 20%;
+    color: rgb(var(--c--text--white));
+    font-size: var(--font-size--p);
 }
-.footerWidget h3 {
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
+.footer__widget__title {
+    font-size: var(--font-size--h5);
+    text-transform: uppercase;
 }
-th, td{
-    font-size: 0.7rem;
-    font-weight: 400;
+
+
+.footer__widget--open {
+
 }
+.footer__widget--post {
+
+}
+.footer__widget--open thread, .footer__widget--open tr {
+    width: 100%;
+}
+
+
 ul.contactAserchPost {
     display: flex;
     flex-direction: column;

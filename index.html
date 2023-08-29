@@ -83,7 +83,6 @@
         </div>
       </section>
     </header>
-
     <main>
       <section class="section-container--col">
         <p class="section-title__prefix">What happens here</p>
@@ -410,119 +409,88 @@
       </section>
     </main>
     <footer>
-      <section class="img__back-ground img__back-ground--footer">
-        <ul class="footerWidgets">
-          <li class="footerWidget openTime">
-            <h3>OPENING HOURS</h3>
-            <table>
-              <thread>
-                <th>Day</th>
-                <th>.......</th>
-                <th>Avaivability</th>
-              </thread>
-              <tr>
-                <th>Monday</th>
-                <td>.......</td>
-                <td>Closed</td>
-              </tr>
-              <tr>
-                <th>Tuesday</th>
-                <td>.......</td>
-                <td>9:00-22:00</td>
-              </tr>
-              <tr>
-                <th>Wednesday</th>
-                <td>.......</td>
-                <td>Closed</td>
-              </tr>
-              <tr>
-                <th>Thurrsday</th>
-                <td>.......</td>
-                <td>9:00-22:00</td>
-              </tr>
-              <tr>
-                <th>Firday</th>
-                <td>.......</td>
-                <td>9:00-22:00</td>
-              </tr>
-              <tr>
-                <th>Saturday</th>
-                <td>.......</td>
-                <td>9:00-22:00</td>
-              </tr>
-              <tr>
-                <th>Sunday</th>
-                <td>.......</td>
-                <td>9:00-22:00</td>
-              </tr>
-            </table>
-          </li>
+      <section
+        class="img__back-ground img__back-ground--footer footer__widget__container"
+      >
+        <div class="footer__widget footer__widget--open">
+          <p class="footer__widget__title">opening hours</p>
+          <dl>
+            <dt>mon</dt>
+            <dd>closed</dd>
+            <dt>tue</dt>
+            <dd>9:00-22:00</dd>
+            <dt>wed</dt>
+            <dd>9:00-22:00</dd>
+            <dt>thu</dt>
+            <dd>9:00-22:00</dd>
+            <dt>fri</dt>
+            <dd>9:00-22:00</dd>
+            <dt>sat</dt>
+            <dd>9:00-22:00</dd>
+            <dt>san</dt>
+            <dd>9:00-17:00</dd>
+          </dl>
+        </div>
+        <div class="footer__widget footer__widget--post">
+          <p class="footer__widget__title">latest post</p>
+          <ul>
+            <li>
+              <a>
+                <p class="postName">Expand your mind, Change Everything</p>
+                <p class="postDate">14.02.2017</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <p class="postName">Places to get lost</p>
+                <p class="postDate">14.02.2017</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <p class="postName">Lewis Howes</p>
+                <p class="postDate">14.02.2017</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <p class="postName">Elevate your Expectation</p>
+                <p class="postDate">14.02.2017</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__widget">
+          <ul class="contactAserchPost">
+            <li class="contact">
+              <p class="footer__widget__title">contact us</p>
+              <ul>
+                <li>info@coffeebean.com</li>
+                <li>1-444-123-4559</li>
+                <li>Raymond Boulevard 224, New York</li>
+              </ul>
+            </li>
 
-          <li class="footerWidget latestPostLink">
-            <h3>LATEST POST</h3>
-            <ul>
-              <li>
-                <a>
-                  <p class="postName">Expand your mind, Change Everything</p>
-                  <p class="postDate">14.02.2017</p>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <p class="postName">Places to get lost</p>
-                  <p class="postDate">14.02.2017</p>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <p class="postName">Lewis Howes</p>
-                  <p class="postDate">14.02.2017</p>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <p class="postName">Elevate your Expectation</p>
-                  <p class="postDate">14.02.2017</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+            <li class="serchPost">
+              <p class="footer__widget__title">search post</p>
+              <input action="#" method="#" class="serchPostForm" />
+              <input type="search" id="search" />
+              <input type="submit" value="SEARCH" />
+            </li>
+          </ul>
+        </div>
 
-          <li class="footerWidget">
-            <ul class="contactAserchPost">
-              <li class="contact">
-                <h3>CONTACT US</h3>
-                <ul>
-                  <li>info@coffeebean.com</li>
-                  <li>1-444-123-4559</li>
-                  <li>Raymond Boulevard 224, New York</li>
-                </ul>
-              </li>
-
-              <li class="serchPost">
-                <h3>
-                  THE LAST<br />
-                  STANDARD POST
-                </h3>
-                <input action="#" method="#" class="serchPostForm" />
-                <input type="search" id="search" />
-                <input type="submit" value="SEARCH" />
-              </li>
-            </ul>
-          </li>
-
-          <li class="footerWidget otherLocations">
-            <h3>OTHER LOCATION</h3>
-            <div class="otherLocation">
-              <p class="shopName">Coffee Bean Philippines</p>
-              <p class="shopLocation">1234 IT Park Cebu City</p>
-            </div>
-            <div class="otherLocation">
-              <p class="shopName">Coffee Bean Tokyo</p>
-              <p class="shopLocation">1234 Business Park Tokyo Japan</p>
-            </div>
-          </li>
-        </ul>
+        <div class="footer__widget footer__widget--location">
+          <p class="footer__widget__title">other location</p>
+          <div class="otherLocation">
+            <p class="shopName">Coffee Bean Philippines</p>
+            <p class="shopLocation">1234 IT Park Cebu City</p>
+          </div>
+          <div class="otherLocation">
+            <p class="shopName">Coffee Bean Tokyo</p>
+            <p class="shopLocation">1234 Business Park Tokyo Japan</p>
+          </div>
+        </div>
       </section>
 
       <section class="socialWidgets">
