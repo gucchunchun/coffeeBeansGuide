@@ -332,15 +332,24 @@ header nav .hamburger {
 }
     /* ads */
 .grid-container--ads {
+    transition: all 0.3s;
     margin-top: var(--marginT--section);
     grid-template-columns: 1fr 1fr;
     aspect-ratio: 4/1;
 }
 .img__back-ground--ads:nth-child(1) {
     background-image: url(img/ad/ads-img1.jpg);
+    grid-column: 1;
 }
 .img__back-ground--ads:nth-child(2) {
     background-image: url(img/ad/ads-img2.jpg);
+    grid-column: 2;
+}
+.grid-container--ads:has(.img__back-ground--ads:nth-child(1):hover) {
+    grid-template-columns: 2fr 1fr;
+}
+.grid-container--ads:has(.img__back-ground--ads:nth-child(2):hover) {
+    grid-template-columns: 1fr 2fr;
 }
 
 /* moreInfo global */
