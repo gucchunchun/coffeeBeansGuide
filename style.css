@@ -14,7 +14,8 @@
     --font-size--h5: 1.414rem;
     --font-size--p: 1rem;
     --w--nav: 50vw;
-    --margin--section: 3.5rem;
+    --marginSide--section: 2rem;
+    --marginT--section: 3.5rem;
 }
 @media screen and (max-width: 36rem){
     :root {
@@ -169,7 +170,7 @@ body {
     object-fit: cover;
 }
 .img__header {
-    font-size: var(--font-size--h3);
+    font-size: var(--font-size--h4);
     font-weight: 700;
     color: rgb(var(--c--text--white));
 }
@@ -182,6 +183,11 @@ body {
     color: rgb(var(--c--text--white));
     text-decoration: underline;
 }
+.grid-container {
+    width: calc(100% - var(--marginSide--section) * 2);
+    display: grid;
+}
+
 /* header */
 header {
     width: 100%;
@@ -192,7 +198,7 @@ header {
     /* nav */
 header nav {
     position: fixed;
-    width: calc(100% - 2rem);
+    width: calc(100% - var(--marginSide--section) * 2);
     height: 6rem;
     display: flex;
     flex-direction: row;
@@ -261,7 +267,7 @@ header nav .hamburger {
         width: 100%;
         height: 50%;
         padding-left: 30%;
-        margin-top: var(--margin--section);
+        margin-top: var(--marginT--section);
     }
     .header__nav__menu{
         text-align: center;
@@ -280,28 +286,28 @@ header nav .hamburger {
     }
     .header__nav__container.navMenu1::before {
         left: -50%;
-        height: calc(100% - var(--margin--section) - (50% - var(--margin--section) + var(--font-size--h5))  * 0.5 / 4);
+        height: calc(100% - var(--marginT--section) - (50% - var(--marginT--section) + var(--font-size--h5))  * 0.5 / 4);
     }
     .header__nav__container.navMenu1 .header__nav__menu:not(#navMenu1) {
         color: rgb(var(--c--text--white));
     }
     .header__nav__container.navMenu2::before {
         left: -30%;
-        height: calc(100% - var(--margin--section) - (50% - var(--margin--section) + var(--font-size--h5)) * 1.5 / 4);
+        height: calc(100% - var(--marginT--section) - (50% - var(--marginT--section) + var(--font-size--h5)) * 1.5 / 4);
     }
     .header__nav__container.navMenu2 .header__nav__menu:nth-of-type(n + 3) {
         color: rgb(var(--c--text--white));
     }
     .header__nav__container.navMenu3::before {
         left: -40%;
-        height: calc(100% - var(--margin--section) - (50% - var(--margin--section) + var(--font-size--h5)) * 2.5 / 4);
+        height: calc(100% - var(--marginT--section) - (50% - var(--marginT--section) + var(--font-size--h5)) * 2.5 / 4);
     }
     .header__nav__container.navMenu3 .header__nav__menu:nth-of-type(n + 4) {
         color: rgb(var(--c--text--white));
     }
     .header__nav__container.navMenu4::before {
         left: -10%;
-        height: calc(100% - var(--margin--section) - (50% - var(--margin--section) + var(--font-size--h5)) * 3.5 / 4);
+        height: calc(100% - var(--marginT--section) - (50% - var(--marginT--section) + var(--font-size--h5)) * 3.5 / 4);
     }
     .header__nav__container.navMenu4 .header__nav__menu:nth-of-type(n + 5) {
         color: rgb(var(--c--text--white));
@@ -324,26 +330,17 @@ header nav .hamburger {
 .img__header--banner span {
     color: rgb(var(--c--secondary));
 }
-/* text on pic global */
-/* .img__text {
-    position: relative;
-    transform: translateY(-50%);
-    top: 50%;
-    left: 50px;
-    width: 50%;
-} */
-
-.bannerText h2{
-    font-size: 5rem;
-    font-weight: bold;
-    color: rgb(89, 70, 57);
+    /* ads */
+.grid-container--ads {
+    margin-top: var(--marginT--section);
+    grid-template-columns: 1fr 1fr;
+    aspect-ratio: 4/1;
 }
-.bannerText h2 span{
-    color: rgb(222, 196, 124);
+.img__back-ground--ads:nth-child(1) {
+    background-image: url(img/ad/ads-img1.jpg);
 }
-.bannerText p {
-    color: white;
-    margin-bottom: 10px;
+.img__back-ground--ads:nth-child(2) {
+    background-image: url(img/ad/ads-img2.jpg);
 }
 
 /* moreInfo global */
@@ -355,23 +352,18 @@ header nav .hamburger {
 }
 
 /* each background pics */
-.adsItem1 {
-    background: url(img/ad/ads-img1.jpg);
-}
-.adsItem2 {
-    background: url(img/ad/ads-img2.jpg);
-}
+
 .adsItem3 {
-    background: url(img/ad/ads-img3.jpg);
+    background-image: url(img/ad/ads-img3.jpg);
 }
 .adsItem4 {
-    background: url(img/ad/ads-img4.jpg);
+    background-image: url(img/ad/ads-img4.jpg);
 }
 .adsItem5 {
-    background: url(img/ad/ads-img5.jpg);
+    background-image: url(img/ad/ads-img5.jpg);
 }
 .adsItem6 {
-    background: url(img/ad/ads-img6.jpg);
+    background-image: url(img/ad/ads-img6.jpg);
 }
 
 /* ads gloal style */
@@ -465,7 +457,7 @@ main {
 
 .discount {
     margin: 5em auto;
-    background: url("img/bg/discount.jpg");
+    background-image: url("img/bg/discount.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: none;
@@ -574,7 +566,7 @@ footer {
 }
 .footerWidgetsBackImg {
     width: 100%;
-    background: url("img/bg/footer.jpg");
+    background-image: url("img/bg/footer.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
