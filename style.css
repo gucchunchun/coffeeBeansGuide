@@ -341,24 +341,24 @@ header nav .hamburger {
     color: rgb(var(--c--secondary));
 }
     /* ads */
-.grid-container--ads {
+.grid-container--header-ads {
     transition: all 0.3s;
     margin-top: var(--marginT--section);
     grid-template-columns: 1fr 1fr;
     aspect-ratio: 5/2;
 }
-.img__back-ground--ads:nth-child(1) {
+.img__back-ground--header-ads:nth-child(1) {
     background-image: url(img/ad/ad1.jpg);
     grid-column: 1;
 }
-.img__back-ground--ads:nth-child(2) {
+.img__back-ground--header-ads:nth-child(2) {
     background-image: url(img/ad/ad2.jpg);
     grid-column: 2;
 }
-.grid-container--ads:has(.img__back-ground--ads:nth-child(1):hover) {
+.grid-container--header-ads:has(.img__back-ground--header-ads:nth-child(1):hover) {
     grid-template-columns: 2fr 1fr;
 }
-.grid-container--ads:has(.img__back-ground--ads:nth-child(2):hover) {
+.grid-container--header-ads:has(.img__back-ground--header-ads:nth-child(2):hover) {
     grid-template-columns: 1fr 2fr;
 }
 
@@ -642,21 +642,21 @@ ul.contactAserchPost {
         --marginSide--section: 1rem;
     }
     /* header */
-    .grid-container--ads,
-    .grid-container--ads:has(.img__back-ground--ads:nth-child(1):hover),
-    .grid-container--ads:has(.img__back-ground--ads:nth-child(2):hover)
+    .grid-container--header-ads,
+    .grid-container--header-ads:has(.img__back-ground--header-ads:nth-child(1):hover),
+    .grid-container--header-ads:has(.img__back-ground--header-ads:nth-child(2):hover)
     {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         aspect-ratio: 3/5;
     }
-    .img__back-ground--ads {
+    .img__back-ground--header-ads {
         margin: 1rem;
     }
-    .img__back-ground--ads:nth-child(1) {
+    .img__back-ground--header-ads:nth-child(1) {
         grid-area: 1/1/1/2;
     }
-    .img__back-ground--ads:nth-child(2) {
+    .img__back-ground--header-ads:nth-child(2) {
         grid-area: 2/1/2/2;
     }
     /* main */
