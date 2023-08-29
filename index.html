@@ -159,8 +159,7 @@
             <p class="product__name">Arabica - Extra Course</p>
             <p class="product__detail">*****</p>
             <p class="product__price product__price--sale">
-              $70.00
-              <span class="product__price--prev">$80.00</span>
+              $70.00<span class="product__price--prev">$80.00</span>
             </p>
           </div>
           <div class="product__container">
@@ -213,133 +212,190 @@
         <h2 class="section-title__header">reservation from</h2>
         <form class="form--reserve__container">
           <section class="form--reserve__section">
-            <fieldset class="inputCustomerDetails">
-              <p class="formTitle">your details</p>
-              <div class="inputDiv">
-                <label for="nameInput">Full Name</label>
+            <fieldset class="form--reserve__fieldset">
+              <p class="form--reserve__title">your details</p>
+              <div class="form--reserve__input-box">
+                <label class="form--reserve__input-box__label" for="full-name">
+                  full name
+                </label>
                 <input
-                  id="nameInput"
+                  class="form--reserve__input-box__input"
+                  id="full-name"
                   type="text"
-                  name="name"
-                  placeholder="Last Name, First Name"
+                  name="full-name"
                   required
                 />
               </div>
-              <div class="inputDiv">
-                <label for="emailInput">Email Address</label>
+              <div class="form--reserve__input-box">
+                <label class="form--reserve__input-box__label" for="email">
+                  email address
+                </label>
                 <input
-                  id="emailInput"
-                  type="text"
+                  class="form--reserve__input-box__input"
+                  id="email"
+                  type="email"
                   name="email"
-                  placeholder="mail@mail.com"
                   required
                 />
               </div>
-              <div class="inputDiv">
-                <label for="phoneNumInput">Phone Number</label>
+              <div class="form--reserve__input-box">
+                <label class="form--reserve__input-box__label" for="tel-number">
+                  telephone number
+                </label>
                 <input
-                  id="phoneNumInput"
-                  type="text"
-                  name="phoneNumber"
-                  placeholder="Last Name, First Name"
+                  class="form--reserve__input-box__input"
+                  id="tel-number"
+                  type="tel"
+                  name="tel-number"
                 />
               </div>
             </fieldset>
-            <fieldset class="ReservationDetails">
-              <p class="formTitle">Reservation Details</p>
-              <div class="inputDiv">
-                <label for="guestNumChoice">Number of Guest</label>
-                <input
-                  id="guestNumChoice"
-                  list="guestNums"
-                  name="guestNumber"
-                />
-                <datalist id="guestNums">
-                  <!-- option value is the info which is send to host -->
-                  <option value="1person"></option>
-                  <option value="2persons"></option>
-                  <option value="3persons"></option>
-                  <option value="more than 4persons"></option>
-                </datalist>
+            <fieldset class="form--reserve__fieldset">
+              <p class="form--reserve__title">reservation details</p>
+              <div class="form--reserve__input-box">
+                <label
+                  class="form--reserve__input-box__label"
+                  for="guest-number"
+                >
+                  number of guest
+                </label>
+                <select
+                  class="form--reserve__input-box__input"
+                  id="guest-number"
+                  name="guest-number"
+                >
+                  <option value="" selected disabled hidden>
+                    chose your party number
+                  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">more than 6</option>
+                </select>
               </div>
-              <div class="inputDiv">
-                <label>Reservation Date</label>
+              <div class="form--reserve__input-box">
+                <label class="form--reserve__input-box__label" for="date"
+                  >reservation date</label
+                >
                 <input
-                  type="date"
+                  class="form--reserve__input-box__input"
                   id="date"
-                  name="reservationDate"
+                  type="date"
+                  name="date"
                   mim="2023-02-17"
                   required
                 />
               </div>
-              <div class="inputDiv">
-                <label>Reservation Time</label>
-                <div class="reserveTime">
-                  <input
-                    type="radio"
-                    id="Morning"
-                    name="reservationTime"
-                    value="Morning"
-                  /><label for="Morning">Morning</label>
-                  <input
-                    type="radio"
-                    id="Afternoon"
-                    name="reservationTime"
-                    value="Afternoon"
-                  /><label for="Morning">Afternoon</label>
-                  <input
-                    type="radio"
-                    id="Night"
-                    name="reservationTime"
-                    value="Night"
-                  /><label for="Night">Night</label>
+              <div class="form--reserve__input-box">
+                <p class="form--reserve__input-box__label">Reservation Time</p>
+                <div class="form--reserve__input-box--radio">
+                  <div class="form--reserve__input-box">
+                    <input
+                      class="form--reserve__input-box__input--radio"
+                      id="morninng"
+                      type="radio"
+                      name="time"
+                      value="Morning"
+                    /><label
+                      class="form--reserve__input-box__label--radio"
+                      for="morning"
+                      >morning</label
+                    >
+                  </div>
+                  <div class="form--reserve__input-box">
+                    <input
+                      class="form--reserve__input-box__input--radio"
+                      id="afternoon"
+                      type="radio"
+                      name="time"
+                      value="afternoon"
+                    /><label
+                      class="form--reserve__input-box__label--radio"
+                      for="Morning"
+                      >afternoon</label
+                    >
+                  </div>
+                  <div class="form--reserve__input-box">
+                    <input
+                      class="form--reserve__input-box__input--radio"
+                      id="night"
+                      type="radio"
+                      name="time"
+                      value="night"
+                    /><label
+                      class="form--reserve__input-box__label--radio"
+                      for="night"
+                      >night</label
+                    >
+                  </div>
                 </div>
               </div>
             </fieldset>
           </section>
           <section class="form--reserve__section">
-            <fieldset>
-              <label for="additiionalRequest">Additional Request</label>
-              <textarea
-                id="request"
-                name="additiionalRequest"
-                rows="10"
-              ></textarea>
+            <fieldset class="form--reserve__fieldset">
+              <label class="form--reserve__title" for="add-request"
+                >Additional Request</label
+              >
+              <textarea id="add-request" name="add-request" rows="7"></textarea>
             </fieldset>
-            <fieldset>
-              <p class="formTitle">PAYMENT</p>
-              <div class="payment">
-                <p>Payment Accepted Cards</p>
-                <img src="./img/reservation-cards.png" alt="" />
+            <fieldset class="form--reserve__fieldset">
+              <p class="form--reserve__title">PAYMENT</p>
+              <div
+                class="form--reserve__input-box--inline form--reserve__payment"
+              >
+                <p class="form--reserve__input-box--inline__label">
+                  Payment Accepted Cards
+                </p>
+                <img
+                  class="form--reserve__input-box--inline__input"
+                  src="./img/reservation-cards.png"
+                  alt="visa, master, american express cards"
+                />
               </div>
-              <div class="inputDiv">
-                <label for="creditName">Full Name</label>
+              <div class="form--reserve__input-box">
+                <label class="form--reserve__input-box__label" for="card-name"
+                  >card holder name</label
+                >
                 <input
-                  id="creditName"
+                  class="form--reserve__input-box__input"
+                  id="card-name"
                   type="text"
-                  name="creditcardName"
-                  placeholder="Yuna Taniguchi"
+                  name="card-name"
                   required
                 />
               </div>
-              <div class="inputDiv">
-                <label for="creditNum">Email Address</label>
+              <div class="form--reserve__input-box">
+                <label class="form--reserve__input-box__label" for="card-number"
+                  >card number</label
+                >
                 <input
-                  id="creditNum"
+                  class="form--reserve__input-box__input"
+                  id="card-number"
                   type="text"
-                  name="creditNumber"
+                  name="card-number"
                   placeholder="1234567890"
                 />
               </div>
             </fieldset>
-            <fieldset>
-              <label for="confirm"
-                >I agree in the <a href="#">terms and conditions</a>.</label
-              >
-              <input type="checkbox" id="confirm" name="confirmation" />
-              <input type="submit" value="SEND" />
-            </fieldset>
           </section>
+          <fieldset class="form--reserve__fieldset">
+            <div class="form--reserve__input-box--confirm">
+              <label
+                class="form--reserve__input-box--confirm__label"
+                for="confirm"
+                >I agree with <a href="#">terms and conditions</a></label
+              >
+              <input id="confirm" type="checkbox" name="confirmation" />
+            </div>
+            <input
+              class="form--reserve__input-box--confirm__submit"
+              type="submit"
+              value="SEND"
+            />
+          </fieldset>
         </form>
       </section>
     </main>
