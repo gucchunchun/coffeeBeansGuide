@@ -341,11 +341,11 @@ header nav .hamburger {
     aspect-ratio: 5/2;
 }
 .img__back-ground--ads:nth-child(1) {
-    background-image: url(img/ad/ads-img1.jpg);
+    background-image: url(img/ad/ad1.jpg);
     grid-column: 1;
 }
 .img__back-ground--ads:nth-child(2) {
-    background-image: url(img/ad/ads-img2.jpg);
+    background-image: url(img/ad/ad2.jpg);
     grid-column: 2;
 }
 .grid-container--ads:has(.img__back-ground--ads:nth-child(1):hover) {
@@ -358,16 +358,16 @@ header nav .hamburger {
 /* each background pics */
 
 .adsItem3 {
-    background-image: url(img/ad/ads-img3.jpg);
+    background-image: url(img/ad/ad3.jpg);
 }
 .adsItem4 {
-    background-image: url(img/ad/ads-img4.jpg);
+    background-image: url(img/ad/ad4.jpg);
 }
 .adsItem5 {
-    background-image: url(img/ad/ads-img5.jpg);
+    background-image: url(img/ad/ad5.jpg);
 }
 .adsItem6 {
-    background-image: url(img/ad/ads-img6.jpg);
+    background-image: url(img/ad/ad6.jpg);
 }
 
 
