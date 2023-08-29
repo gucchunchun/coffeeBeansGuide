@@ -13,6 +13,7 @@
     --font-size--h4: 1.999rem;
     --font-size--h5: 1.414rem;
     --font-size--p: 1rem;
+    --font-size--small: 0.8rem;
     --w--nav: 50vw;
     --marginSide--section: 2rem;
     --marginT--section: 3.5rem;
@@ -586,38 +587,92 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: center;
 }
 .footer__widget {
-    width: 20%;
+    width: 23%;
+    min-width: 13rem;
+    padding: 1rem;
     color: rgb(var(--c--text--white));
     font-size: var(--font-size--p);
 }
+.footer__widget--stacked {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+}
 .footer__widget__title {
+    height: calc(var(--font-size--h5) * 2);
+    line-height: var(--font-size--h5);
+    margin-bottom: 0.5rem;
     font-size: var(--font-size--h5);
+    font-weight: 700;
     text-transform: uppercase;
 }
-
-
-.footer__widget--open {
-
-}
-.footer__widget--post {
-
-}
-.footer__widget--open thread, .footer__widget--open tr {
+.footer__widget__list--dl {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-
-ul.contactAserchPost {
+.footer__widget__list--ul {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
 }
-.contact {
-    margin-bottom: 30px;
+.footer__widget--open__day {
+    text-transform: uppercase;
+    width: 30%;
 }
+.footer__widget--open__status {
+    width: 60%;
+}
+.footer__widget--post__post {
+    width: 90%;
+    margin-bottom: calc(var(--font-size--p) / 2);
+    border-bottom: 1px solid rgb(var(--c--text--white));
+}
+.footer__widget--post__post__date {
+    height: var(--font-size--small);
+    line-height: var(--font-size--small);
+    font-size: var(--font-size--small);
+}
+.footer__widget--post__post__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.footer__widget--post__post:hover {
+    font-weight: 700;
+}
+.footer__widget--contact__way {
+    height: var(--font-size--small);
+    line-height: var(--font-size--small);
+    font-size: var(--font-size--small);
+}
+.footer__widget--contact__way::after {
+    content: ":";
+}
+.footer__widget--contact__info {
+    width: 100%;
+}
+.footer__widget--location__shop {
+    width: 100%;
+}
+.footer__widget--location__address {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 1rem;
+}
+
 
 .socialWidgets {
     width: 100%;

@@ -414,82 +414,98 @@
       >
         <div class="footer__widget footer__widget--open">
           <p class="footer__widget__title">opening hours</p>
-          <dl>
-            <dt>mon</dt>
-            <dd>closed</dd>
-            <dt>tue</dt>
-            <dd>9:00-22:00</dd>
-            <dt>wed</dt>
-            <dd>9:00-22:00</dd>
-            <dt>thu</dt>
-            <dd>9:00-22:00</dd>
-            <dt>fri</dt>
-            <dd>9:00-22:00</dd>
-            <dt>sat</dt>
-            <dd>9:00-22:00</dd>
-            <dt>san</dt>
-            <dd>9:00-17:00</dd>
+          <dl class="footer__widget__list--dl">
+            <dt class="footer__widget--open__day">mon</dt>
+            <dd class="footer__widget--open__status">closed</dd>
+            <dt class="footer__widget--open__day">tue</dt>
+            <dd class="footer__widget--open__status">9:00-22:00</dd>
+            <dt class="footer__widget--open__day">wed</dt>
+            <dd class="footer__widget--open__status">9:00-22:00</dd>
+            <dt class="footer__widget--open__day">thu</dt>
+            <dd class="footer__widget--open__status">9:00-22:00</dd>
+            <dt class="footer__widget--open__day">fri</dt>
+            <dd class="footer__widget--open__status">9:00-22:00</dd>
+            <dt class="footer__widget--open__day">sat</dt>
+            <dd class="footer__widget--open__status">9:00-22:00</dd>
+            <dt class="footer__widget--open__day">san</dt>
+            <dd class="footer__widget--open__status">9:00-17:00</dd>
           </dl>
         </div>
         <div class="footer__widget footer__widget--post">
           <p class="footer__widget__title">latest post</p>
-          <ul>
-            <li>
-              <a>
-                <p class="postName">Expand your mind, Change Everything</p>
-                <p class="postDate">14.02.2017</p>
+          <ul class="footer__widget__list--ul">
+            <li class="footer__widget--post__post">
+              <a href="#">
+                <p class="footer__widget--post__post__date">14.02.2017</p>
+                <p class="footer__widget--post__post__name">
+                  expand your mind, change everything
+                </p>
               </a>
             </li>
-            <li>
-              <a>
-                <p class="postName">Places to get lost</p>
-                <p class="postDate">14.02.2017</p>
+            <li class="footer__widget--post__post">
+              <a href="#">
+                <p class="footer__widget--post__post__date">14.02.2017</p>
+                <p class="footer__widget--post__post__name">
+                  places to get lost
+                </p>
               </a>
             </li>
-            <li>
-              <a>
-                <p class="postName">Lewis Howes</p>
-                <p class="postDate">14.02.2017</p>
+            <li class="footer__widget--post__post">
+              <a href="#">
+                <p class="footer__widget--post__post__date">14.02.2017</p>
+                <p class="footer__widget--post__post__name">lewis howes</p>
               </a>
             </li>
-            <li>
-              <a>
-                <p class="postName">Elevate your Expectation</p>
-                <p class="postDate">14.02.2017</p>
+            <li class="footer__widget--post__post">
+              <a href="#">
+                <p class="footer__widget--post__post__date">14.02.2017</p>
+                <p class="footer__widget--post__post__name">
+                  elevate your expectation
+                </p>
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__widget">
-          <ul class="contactAserchPost">
-            <li class="contact">
-              <p class="footer__widget__title">contact us</p>
-              <ul>
-                <li>info@coffeebean.com</li>
-                <li>1-444-123-4559</li>
-                <li>Raymond Boulevard 224, New York</li>
-              </ul>
-            </li>
-
-            <li class="serchPost">
-              <p class="footer__widget__title">search post</p>
-              <input action="#" method="#" class="serchPostForm" />
-              <input type="search" id="search" />
-              <input type="submit" value="SEARCH" />
-            </li>
-          </ul>
+          <div class="footer__widget footer__widget--stacked">
+            <p class="footer__widget__title">contact us</p>
+            <dl class="footer__widget__list--dl">
+              <dt class="footer__widget--contact__way">email</dt>
+              <dd class="footer__widget--contact__info">info@coffeebean.com</dd>
+              <dt class="footer__widget--contact__way">tel</dt>
+              <dd class="footer__widget--contact__info">1-444-123-4559</dd>
+              <dt class="footer__widget--contact__way">address</dt>
+              <dd class="footer__widget--contact__info">
+                Raymond Boulevard 224, New York
+              </dd>
+            </dl>
+          </div>
+          <div class="footer__widget footer__widget--stacked">
+            <p class="footer__widget__title">search post</p>
+            <input
+              class="footer__widget__search-post__input"
+              type="search"
+              id="search"
+            />
+            <button class="footer__widget__search-post__button" type="button">
+              search
+            </button>
+          </div>
         </div>
-
         <div class="footer__widget footer__widget--location">
           <p class="footer__widget__title">other location</p>
-          <div class="otherLocation">
-            <p class="shopName">Coffee Bean Philippines</p>
-            <p class="shopLocation">1234 IT Park Cebu City</p>
-          </div>
-          <div class="otherLocation">
-            <p class="shopName">Coffee Bean Tokyo</p>
-            <p class="shopLocation">1234 Business Park Tokyo Japan</p>
-          </div>
+          <dl class="footer__widget__list--dl">
+            <dt class="footer__widget--location__shop">
+              Coffee Bean Philippines
+            </dt>
+            <dd class="footer__widget--location__address">
+              1234 IT Park Cebu City
+            </dd>
+            <dt class="footer__widget--location__shop">Coffee Bean Tokyo</dt>
+            <dd class="footer__widget--location__address">
+              1234 Business Park Tokyo Japan
+            </dd>
+          </dl>
         </div>
       </section>
 
