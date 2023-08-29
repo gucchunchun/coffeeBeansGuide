@@ -34,6 +34,9 @@ a {
 button {
     border: none;
 }
+fieldset {
+    border: none;
+}
     /* scale 1.414 */
 h1 {
     font-size: var(--font-size--h1);
@@ -169,6 +172,7 @@ body {
     font-size: var(--font-size--h4);
     font-weight: 700;
     color: rgb(var(--c--text--white));
+    text-transform: uppercase;
 }
 .img__text {
     font-size: var(--font-size--h5);
@@ -373,17 +377,18 @@ main {
     flex-direction: column;
     align-items: center;
 }
-.section-title--prefix {
+.section-title__prefix {
     font-size: var(--font-size--p);
     color: rgb(var(--c--text--black));
     font-style: italic;
 }
-.section-title--header {
+.section-title__header {
     width: fit-content;
+    border-bottom: 1px solid rgb(var(--c--text--black));
     text-align: center;
     font-size: var(--font-size--h3);
     color: rgb(var(--c--text--black));
-    border-bottom: 1px solid rgb(var(--c--text--black));
+    text-transform: uppercase;
 }
     /* product show case */
 .grid-container--products {
@@ -472,8 +477,6 @@ main {
     gap: 1rem;
     aspect-ratio: 4/3;
 }
-.img__back-ground--main-ads {
-}
 .img__back-ground--main-ads:nth-child(1) {
     background-image: url("./img/ad/ad3.jpg");
 }
@@ -487,47 +490,20 @@ main {
     background-image: url("./img/ad/ad6.jpg");
 }
 
+    /* form */
 
-
-main .ads {
-    margin-top: 60px;
-}
-main .adsItems {
-    margin-bottom: 4em;
-}
-
-.sale {
-    flex-wrap: nowrap;
-}
-
-.reservaitonForm {
+.form--reserve__container {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.reservaitonForm form {
-    width: 90%;
-    display: flex;
     justify-content: space-between;
-    /* form is block, so it should fit the inside elements height */
 }
-.reservaitonForm section {
+.form--reserve__section {
     width: 48%;
-    height: auto;
+    padding: 1rem;
     background-color: rgb(243, 245, 245);
-    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
-    /* padding is not included to the width size */
-}
-.reservaitonForm section * {
-    width:100%;
-}
-fieldset {
-    border: none;
 }
 .inputDiv {
     height: 4rem;
