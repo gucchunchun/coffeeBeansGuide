@@ -385,6 +385,8 @@ main {
     font-style: italic;
 }
 .section-title--header {
+    width: fit-content;
+    text-align: center;
     font-size: var(--font-size--h3);
     color: rgb(var(--c--text--black));
     border-bottom: 1px solid rgb(var(--c--text--black));
@@ -625,37 +627,8 @@ ul.contactAserchPost {
     margin: 0 3px;
 }
 
-@media only screen and (max-width:800px) {
-    .ads {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .adsItems {
-       width: 100%;
-       aspect-ratio: 1/0.5;
-    }
-    .adstext {
-        transform: translate(-50%,-50%);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: white;
-        text-align: center;
-    }
-    .merchandiseItems {
-        width: 48%;
-    }
-    .reservaitonForm form {
-        flex-direction: column;
-        align-items: center;
-    }
-    .reservaitonForm form section {
-        width: 100%;
-    }
-}
 
-@media screen and (max-width: 36rem){
+@media screen and (max-width: 43rem){
     :root {
         --font-size--h1: 3.052rem;
         --font-size--h2: 2.441rem;
@@ -664,6 +637,7 @@ ul.contactAserchPost {
         --font-size--h5: 1.25rem;
         --marginSide--section: 1rem;
     }
+    /* header */
     .grid-container--ads,
     .grid-container--ads:has(.img__back-ground--ads:nth-child(1):hover),
     .grid-container--ads:has(.img__back-ground--ads:nth-child(2):hover)
@@ -672,10 +646,18 @@ ul.contactAserchPost {
         grid-template-rows: 1fr 1fr;
         aspect-ratio: 3/5;
     }
+    .img__back-ground--ads {
+        margin: 1rem;
+    }
     .img__back-ground--ads:nth-child(1) {
         grid-area: 1/1/1/2;
     }
     .img__back-ground--ads:nth-child(2) {
         grid-area: 2/1/2/2;
+    }
+    /* main */
+    .grid-container-products {
+        grid-template-columns: repeat(4, 50%);
+        overflow-x: scroll;
     }
 }
