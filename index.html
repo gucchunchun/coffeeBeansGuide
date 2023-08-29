@@ -252,15 +252,17 @@
             </fieldset>
             <fieldset class="form--reserve__fieldset">
               <p class="form--reserve__title">reservation details</p>
-              <div class="form--reserve__input-box">
+              <div
+                class="form--reserve__input-box form--reserve__input-box--inline"
+              >
                 <label
-                  class="form--reserve__input-box__label"
+                  class="form--reserve__input-box--inline__label"
                   for="guest-number"
                 >
                   number of guest
                 </label>
                 <select
-                  class="form--reserve__input-box__input"
+                  class="form--reserve__input-box--inline__input"
                   id="guest-number"
                   name="guest-number"
                 >
@@ -275,12 +277,16 @@
                   <option value="6">more than 6</option>
                 </select>
               </div>
-              <div class="form--reserve__input-box">
-                <label class="form--reserve__input-box__label" for="date"
+              <div
+                class="form--reserve__input-box form--reserve__input-box--inline"
+              >
+                <label
+                  class="form--reserve__input-box--inline__label"
+                  for="date"
                   >reservation date</label
                 >
                 <input
-                  class="form--reserve__input-box__input"
+                  class="form--reserve__input-box--inline__input"
                   id="date"
                   type="date"
                   name="date"
@@ -290,8 +296,10 @@
               </div>
               <div class="form--reserve__input-box">
                 <p class="form--reserve__input-box__label">Reservation Time</p>
-                <div class="form--reserve__input-box--radio">
-                  <div class="form--reserve__input-box">
+                <div
+                  class="form--reserve__input-box form--reserve__input-box--inline form--reserve__input-box--inline--radio"
+                >
+                  <div class="form--reserve__input-box--radio">
                     <input
                       class="form--reserve__input-box__input--radio"
                       id="morninng"
@@ -304,7 +312,7 @@
                       >morning</label
                     >
                   </div>
-                  <div class="form--reserve__input-box">
+                  <div class="form--reserve__input-box--radio">
                     <input
                       class="form--reserve__input-box__input--radio"
                       id="afternoon"
@@ -317,7 +325,7 @@
                       >afternoon</label
                     >
                   </div>
-                  <div class="form--reserve__input-box">
+                  <div class="form--reserve__input-box--radio">
                     <input
                       class="form--reserve__input-box__input--radio"
                       id="night"
@@ -343,18 +351,6 @@
             </fieldset>
             <fieldset class="form--reserve__fieldset">
               <p class="form--reserve__title">PAYMENT</p>
-              <div
-                class="form--reserve__input-box--inline form--reserve__payment"
-              >
-                <p class="form--reserve__input-box--inline__label">
-                  Payment Accepted Cards
-                </p>
-                <img
-                  class="form--reserve__input-box--inline__input"
-                  src="./img/reservation-cards.png"
-                  alt="visa, master, american express cards"
-                />
-              </div>
               <div class="form--reserve__input-box">
                 <label class="form--reserve__input-box__label" for="card-name"
                   >card holder name</label
@@ -379,10 +375,24 @@
                   placeholder="1234567890"
                 />
               </div>
+              <div
+                class="form--reserve__input-box form--reserve__input-box--inline"
+              >
+                <p class="form--reserve__input-box--inline__label">
+                  Payment Accepted Cards
+                </p>
+                <img
+                  class="form--reserve__input-box--inline__input"
+                  src="./img/reservation-cards.png"
+                  alt="visa, master, american express cards"
+                />
+              </div>
             </fieldset>
           </section>
           <fieldset class="form--reserve__fieldset">
-            <div class="form--reserve__input-box--confirm">
+            <div
+              class="form--reserve__input-box form--reserve__input-box--confirm"
+            >
               <label
                 class="form--reserve__input-box--confirm__label"
                 for="confirm"
@@ -399,9 +409,8 @@
         </form>
       </section>
     </main>
-
     <footer>
-      <section class="footerWidgetsBackImg">
+      <section class="img__back-ground img__back-ground--footer">
         <ul class="footerWidgets">
           <li class="footerWidget openTime">
             <h3>OPENING HOURS</h3>

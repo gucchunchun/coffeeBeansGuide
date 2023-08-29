@@ -491,7 +491,6 @@ main {
 }
 
     /* form */
-
 .form--reserve__container {
     width: 100%;
     height: fit-content;
@@ -507,7 +506,7 @@ main {
     justify-content: space-between;
 }
 .form--reserve__fieldset {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -520,6 +519,7 @@ main {
 }
 .form--reserve__input-box {
     width: 100%;
+    padding: 0.5rem;
 }
 .form--reserve__input-box__label {
     display: block;
@@ -534,9 +534,8 @@ main {
     height: 90%;
 }
 .form--reserve__input-box--radio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: fit-content;
+    margin-left: 10px;
 }
 .form--reserve__input-box--inline {
     display: flex;
@@ -545,14 +544,11 @@ main {
 }
 .form--reserve__input-box--inline__label {
     display: block;
-    width: 40%;
+    width: 50%;
 }
 .form--reserve__input-box--inline__input {
     display: block;
-    width: 60%;
-}
-.form--reserve__payment {
-    padding: 1rem;
+    width: 50%;
 }
 .form--reserve__input-box--confirm {
     width: fit-content;
@@ -565,18 +561,18 @@ main {
     padding: 0.5rem;
     margin: 1rem auto;
     display: block;
-    font-size: var(--font-size--p);
 }
+.form--reserve__input-box--inline--radio {
+    justify-content: flex-end;
+}
+
 /* footer */
 footer {
-    margin-top: 100px;
+    margin-top: var(--marginT--section);
 }
-.footerWidgetsBackImg {
-    width: 100%;
+
+.img__back-ground--footer {
     background-image: url("img/bg/footer.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .footerWidgets {
     margin: 0 auto;
@@ -679,5 +675,8 @@ ul.contactAserchPost {
     .section-container--grid--main-ads {
         grid-template-columns: 1fr;
         aspect-ratio: 3/5;
+    }
+    .form--reserve__section {
+        width: 100%;
     }
 }
