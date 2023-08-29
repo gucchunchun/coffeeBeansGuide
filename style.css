@@ -183,14 +183,16 @@ body {
     width: calc(100% - var(--marginSide--section) * 2);
     display: grid;
 }
-.flex-container--col {
+.section-container--col {
     width: calc(100% - var(--marginSide--section) * 2);
+    margin-top: var(--marginT--section);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.flex-container--row {
+.section-container--row {
     width: calc(100% - var(--marginSide--section) * 2);
+    margin-top: var(--marginT--section);
     display: flex;
     align-items: center;
 }
@@ -397,19 +399,13 @@ main {
     border-bottom: 1px solid rgb(var(--c--text--black));
 }
     /* product show case */
-.grid-container-products {
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 1fr 1fr;
+.grid-container--products {
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-template-rows: auto auto;
+    grid-auto-rows: 0px;
+    overflow: hidden;
 }
-.product--container:nth-child(1) { grid-area: 1/1/1/2; }
-.product--container:nth-child(2) { grid-area: 1/2/1/3; }
-.product--container:nth-child(3) { grid-area: 1/3/1/4; }
-.product--container:nth-child(4) { grid-area: 1/4/1/5; }
-.product--container:nth-child(5) { grid-area: 2/1/2/2; }
-.product--container:nth-child(6) { grid-area: 2/2/2/3; }
-.product--container:nth-child(7) { grid-area: 2/3/2/4; }
-.product--container:nth-child(8) { grid-area: 2/4/2/5; }
-.product--container {
+.product__container {
     width: 100%;
     height: fit-content;
     padding: 1rem;
@@ -417,12 +413,12 @@ main {
     flex-direction: column;
     align-items: flex-start;
 }
-.product--img {
+.product__img {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
 }
-.product--name {
+.product__name {
     width: 100%;
     height: calc(var(--font-size--h5) * 2);
     line-height: var(--font-size--h5);
@@ -436,7 +432,7 @@ main {
     line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-.product--detail {
+.product__detail {
     width: 100%;
     height: calc(var(--font-size--p) * 2);
     line-height: var(--font-size--p);
@@ -449,11 +445,14 @@ main {
     line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-.product--price {
+.product__price {
     width: 100%;
+    height: var(--font-size--p);
+    line-height: var(--font-size--p);
+    margin-top: 0.5rem;
     text-align: end;
 }
-
+    /* main news */
 .img__back-ground--main-news {
     width: 70%;
     height: auto;
@@ -469,20 +468,16 @@ main {
 .img__prefix--main-news, .img__header--main-news {
     text-align: center;
 }
-.discountText {
-    transform: translate(-50%,-50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    text-align: center;
+    /* sale products show case */
+.product__price--sale {
+    font-weight: 700;
+    color: rgb(var(--c--secondary));
 }
-.discountText .moreInfoButton{
-    margin: 0 auto;
-    width: fit-content;
-    background-color: rgba(255,255,255,0.5);
+.product__price--prev {
+    font-weight: normal;
+    color: rgb(var(--c--text--black));
+    text-decoration: line-through;
 }
-
 
 main .ads {
     margin-top: 60px;
@@ -665,8 +660,8 @@ ul.contactAserchPost {
         grid-area: 2/1/2/2;
     }
     /* main */
-    .grid-container-products {
-        grid-template-columns: repeat(4, 50%);
+    .grid-container--products {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
         overflow-x: scroll;
     }
     .img__back-ground--main-news {
