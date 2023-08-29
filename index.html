@@ -13,16 +13,51 @@
     <header>
       <nav>
         <a class="header__site-title" href="#"> COFFEE BEANS </a>
-        <button class="hamburger" type="button" onclick="toggleNav(event)">
+        <button
+          id="hamburger--nav"
+          class="hamburger"
+          type="button"
+          onclick="navMenuToggle()"
+        >
           <div class="hamburger__line"></div>
         </button>
         <div id="header__nav" class="header__nav__container">
           <ul class="header__nav__menu-list">
-            <li class="header__nav__menu"><a href="#nav">Home</a></li>
-            <li class="header__nav__menu"><a href="#">Merchandise</a></li>
-            <li class="header__nav__menu"><a href="#">On Sale</a></li>
-            <li class="header__nav__menu"><a href="#">Discount</a></li>
-            <li class="header__nav__menu"><a href="#">Reservation</a></li>
+            <li
+              id="navMenu1"
+              class="header__nav__menu"
+              onclick="navMenuToggle()"
+            >
+              <a href="#nav">Home</a>
+            </li>
+            <li
+              id="navMenu2"
+              class="header__nav__menu"
+              onclick="navMenuToggle()"
+            >
+              <a href="#">Merchandise</a>
+            </li>
+            <li
+              id="navMenu3"
+              class="header__nav__menu"
+              onclick="navMenuToggle()"
+            >
+              <a href="#">On Sale</a>
+            </li>
+            <li
+              id="navMenu4"
+              class="header__nav__menu"
+              onclick="navMenuToggle()"
+            >
+              <a href="#">Discount</a>
+            </li>
+            <li
+              id="navMenu5"
+              class="header__nav__menu"
+              onclick="navMenuToggle()"
+            >
+              <a href="#">Reservation</a>
+            </li>
           </ul>
         </div>
       </nav>
