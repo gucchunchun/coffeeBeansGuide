@@ -384,6 +384,8 @@ main {
 }
 .section-title__header {
     width: fit-content;
+    height: var(--font-size--h3);
+    line-height: var(--font-size--h3);;
     border-bottom: 1px solid rgb(var(--c--text--black));
     text-align: center;
     font-size: var(--font-size--h3);
