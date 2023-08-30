@@ -674,35 +674,38 @@ footer {
 }
 
 
-.socialWidgets {
+.footer__widget--social {
     width: 100%;
     height: 40px;
     padding: 0;
-    background-color: rgb(40, 38, 38);
+    background-color: rgb(var(--c--main));
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.footer__widget--social__widget {
+    height: 100%;
+    margin: 0 10vw;
     display: flex;
     justify-content: center;
-}
-.socialWidget {
-    margin: 0 30px;
-    height: 100%;
-    width: 10rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-.socialWidget p {
-    font-size: 0.6rem;
-    color: aliceblue;
-    text-align: center;
-}
-.socialWidget a, .socialWidget p{
-    height: 100%;
-    display: flex;
     align-items: center;
+    color: rgb(var(--c--text--white));
+    font-size: var(--font-size--small);
+    white-space: nowrap;
 }
-.socialWidget img {
-    height: 70%;
-    margin: 0 3px;
+.footer__widget--social__widget--icon {
+    max-width: 40px;
+    height: 90%;
+    aspect-ratio: 1;
+}
+.footer__widget--social__widget--icon--facebook {
+    background-image: url("./img/icon-fb.png");
+}
+.footer__widget--social__widget--icon--twitter {
+    background-image: url("./img/icon-tw.png");
+}
+.footer__widget--social__widget--icon--instagram {
+    background-image: url("./img/icon-ig.png");
 }
 
 
@@ -713,6 +716,8 @@ footer {
         --font-size--h3: 1.953rem;
         --font-size--h4: 1.563rem;
         --font-size--h5: 1.25rem;
+        --font-size--p: 1rem;
+        --font-size--small: 0.5rem;
         --marginSide--section: 1rem;
     }
     /* header */
@@ -747,5 +752,8 @@ footer {
     }
     .form--reserve__section {
         width: 100%;
+    }
+    .footer__widget--social__widget {
+        margin: 0 0.5rem;
     }
 }
